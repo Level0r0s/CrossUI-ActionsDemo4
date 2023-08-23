@@ -294,29 +294,6 @@ xui.Class('App', 'xui.Module',{
             
             host.ctl_group1.append(
                 xui.create("xui.UI.HTMLButton")
-                .setHost(host,"ctl_htmlbutton6")
-                .setDesc("URL Test 1")
-                .setLeft("0.8333333333333334em")
-                .setTop("0em")
-                .setWidth("8.333333333333334em")
-                .setHeight("2.5em")
-                .setCaption("URL Test 1")
-                .onClick([
-                    {
-                        "desc" : "self",
-                        "type" : "other",
-                        "target" : "url",
-                        "method" : "open----_blank",
-                        "args" : [
-                            "https://golsistemas.com.br"
-                        ],
-                        "event" : 1
-                    }
-                ])
-            );
-            
-            host.ctl_group1.append(
-                xui.create("xui.UI.HTMLButton")
                 .setHost(host,"ctl_htmlbutton7")
                 .setDesc("URL Test 2")
                 .setLeft("10em")
@@ -359,6 +336,26 @@ xui.Class('App', 'xui.Module',{
                             "linb@crossui.com"
                         ],
                         "method" : "mailTo"
+                    }
+                ])
+            );
+            
+            host.ctl_group1.append(
+                xui.create("xui.UI.HTMLButton")
+                .setHost(host,"xui_ui_htmlbutton90")
+                .setLeft("2.2857142857142856em")
+                .setTop("0.7619047619047619em")
+                .setCaption("Native Button")
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "other",
+                        "target" : "url",
+                        "args" : [
+                            "https://golsistemas.com.br"
+                        ],
+                        "method" : "open----_blank",
+                        "event" : 1
                     }
                 ])
             );
